@@ -77,9 +77,11 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Load pre-trained model and TF-IDF vectorizer (ensure these are saved earlier)
-svc_model = pickle.load(open('clf.pkl', 'rb'))  # Example file name, adjust as needed
-tfidf = pickle.load(open('tfidf.pkl', 'rb'))  # Example file name, adjust as needed
-le = pickle.load(open('encoder.pkl', 'rb'))  # Example file name, adjust as needed
+import os
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+svc_model = pickle.load(open(os.path.join(BASE_DIR, 'clf.pkl'), 'rb'))
+tfidf = pickle.load(open(os.path.join(BASE_DIR, 'tfidf.pkl'), 'rb'))
+le = pickle.load(open(os.path.join(BASE_DIR, 'encoder.pkl'), 'rb'))
 
 
 # Function to clean resume text
