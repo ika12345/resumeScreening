@@ -127,10 +127,10 @@ Three classifiers were trained and evaluated on a balanced dataset (2,100 sample
 
 ##  📈 Dataset
 
-- **Source**: 962 real resumes across 25 job categories
-- **Categories**: Data Science, Python Developer, Java Developer, Testing, DevOps Engineer, HR, Sales, and 18 more
-- **Preprocessing**: Balanced using stratified oversampling
-- **Final Size**: 2,100 samples (80% train, 20% test)
+- **Dataset**: Updated Resume Dataset – [3.1 MB / 962 records]
+- **Categories**: 25 professional job categories (Data Science, Java Developer, Testing, etc.)
+- **Preprocessing**: Balanced using stratified oversampling to 2,100 samples
+- **Structure**: Labeled CSV with `Category` and `Resume` text columns
 
 ---
 
